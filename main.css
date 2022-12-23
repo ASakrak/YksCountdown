@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: black;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    font-weight: 900;
+}
+
+hr {
+    background-color: orange;
+    height: 2px;
+    border: 0;
+}
+
+.underline {
+
+    height: 7px;
+
+    background-color: rgb(56, 56, 56);
+    margin-top: 3px;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+}
+
+.underline span {
+    width: 80px;
+
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    left: 10px;
+    height: 100%;
+    border-radius: 3px;
+    animation: moving 7s linear infinite;
+
+}
+
+@keyframes moving {
+    0% {
+        left: -20px;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+.countdown {
+    color: rgb(255, 255, 255);
+    font-size: 56px;
+    font-weight: 400;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 80vh;
+}
+
+@media (max-width: 375px) {
+    .underline {
+        left: 35px;
+        right: 35px;
+        width: 310px;
+    }
+
+    .countdown {
+        font-size: 36px;
+    }
+}
